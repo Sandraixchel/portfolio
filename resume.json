@@ -1,0 +1,48 @@
+{
+  "name": "Sandra López",
+  "title": "Junior Data Analyst",
+  "location": "Dublin, Ireland",
+  "contact": {
+    "email": "hello@sandralopez.dev",
+    "linkedin": "https://www.linkedin.com/in/sandra-lopez/",
+    "github": "https://github.com/sandralopez"
+  },
+  "summary": "Junior data analyst transforming complex datasets into clear, actionable insights across SQL, Python, and modern BI stacks.",
+  "skills": [
+    "SQL",
+    "Python",
+    "Pandas",
+    "Tableau",
+    "Power BI",
+    "A/B Testing"
+  ],
+  "projects": [
+    {
+      "name": "Retail Sales Dashboard",
+      "description": "Multi-page Tableau dashboard with automated insights for weekly retail reporting.",
+      "highlights": ["+9% forecast accuracy", "30% faster reporting"],
+      "links": {
+        "github": "https://github.com/sandralopez/retail-dashboard",
+        "caseStudy": "#"
+      }
+    },
+    {
+      "name": "Churn Prediction",
+      "description": "Tree-based churn classification with SHAP-driven model storytelling.",
+      "highlights": ["ROC-AUC 0.87", "Explainable feature insights"],
+      "links": {
+        "github": "https://github.com/sandralopez/churn-prediction",
+        "caseStudy": "#"
+      }
+    },
+    {
+      "name": "Experiment Ops Toolkit",
+      "description": "Analytics toolkit to monitor experiments and consolidate cohort learnings.",
+      "highlights": ["Unified A/B catalog", "Automated weekly insights"],
+      "links": {
+        "github": "https://github.com/sandralopez/experiment-ops",
+        "caseStudy": "#"
+      }
+    }
+  ]
+}
