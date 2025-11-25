@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Churn Prediction Case Study · Sandra López</title>
+    <meta
+      name="description"
+      content="Walk through Sandra López's churn prediction workflow backed by interpretable models, Power BI storytelling, and automation notes."
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="case-study-layout">
+      <header class="site-header case-study-header" data-section="case-study">
+        <div class="wrap">
+          <div class="brand">
+            <a class="brand__link" href="index.html#home">Sandra López</a>
+          </div>
+          <input
+            type="checkbox"
+            id="nav-toggle-churn"
+            class="nav-toggle-checkbox"
+            aria-controls="site-nav-churn"
+          />
+          <label class="nav-toggle-label" for="nav-toggle-churn">
+            <span class="nav-toggle-label__text">Menu</span>
+            <svg aria-hidden="true" focusable="false" width="24" height="24" viewBox="0 0 24 24">
+              <path
+                d="M4 6h16M4 12h16M4 18h16"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-width="1.8"
+              />
+            </svg>
+          </label>
+          <nav id="site-nav-churn" class="site-nav" aria-label="Main navigation">
+            <ul class="site-nav__list">
+              <li><a href="index.html#home">Home</a></li>
+              <li><a href="index.html#projects">Projects</a></li>
+              <li><a href="index.html#contact">Contact</a></li>
+              <li><a href="index.html#cv">Download CV</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main class="case-study-main">
+        <div class="wrap">
+          <section class="case-study-hero" aria-labelledby="case-study-title">
+            <p class="eyebrow">Featured case study</p>
+            <h1 id="case-study-title">Subscription Churn Prediction</h1>
+            <p>
+              I engineered behavioral features, trained tree-based models, and translated the findings into a BI story
+              that equips customer-success managers with proactive win-back playbooks.
+            </p>
+            <ul class="case-study-hero__tags" aria-label="Tools highlighted">
+              <li>Python</li>
+              <li>Pandas</li>
+              <li>scikit-learn</li>
+              <li>Power BI</li>
+            </ul>
+            <div class="case-study-meta">
+              <span><strong>Timeline:</strong> 2 weeks · Aug 2025</span>
+              <span><strong>Dataset:</strong> 58k subscribers · 36 engineered features</span>
+            </div>
+          </section>
+          <section class="case-study-dashboard" aria-labelledby="dashboard-heading">
+            <div class="section__header">
+              <h2 id="dashboard-heading">Watch the model insights</h2>
+              <p>
+                The embedded BI view tracks chorded SHAP explanations, risk cohorts, and cohort-level KPIs. Toggle the
+                slicers to contrast model drivers by subscription age.
+              </p>
+            </div>
+            <iframe
+              class="case-study-dashboard__frame"
+              title="Churn prediction interpretability dashboard"
+              src="https://app.powerbi.com/view?r=eyJrIjoiN2IwY2UwZTctYzgwNS00MDhmLWEzYjEtYjViYjk5NTE1NGEyIiwidCI6ImE2MWY4YTRmLTk0ODEtNDVjYy1hZTgwLWEyOWQ3MGY1MDAzYyIsImMiOjh9"
+              allowfullscreen
+            ></iframe>
+          </section>
+          <section class="case-study-content">
+            <article>
+              <h3>Model build</h3>
+              <p>
+                After cleaning subscriber tenure, add-on usage, and ticket history, I trained LightGBM and CatBoost
+                models on a stratified 75/25 split. The final stacked ensemble hit ROC-AUC 0.87 and surfaced easy-to-act
+                drivers such as first-response latency.
+              </p>
+            </article>
+            <article>
+              <h3>Business impact</h3>
+              <ul>
+                <li>Segment-based playbooks reduced involuntary churn by 6% in the pilot region within one quarter.</li>
+                <li>Weekly refresh pipeline (dbt + Power BI) cut analyst time from 4 hours to 20 minutes.</li>
+                <li>CSM leadership adopted the Explainability page as the default win-back standup artifact.</li>
+              </ul>
+            </article>
+            <article>
+              <h3>Next steps</h3>
+              <p>
+                Automate an uplift model to triage which incentives perform best per cohort, feeding back into the
+                embedded dashboard via Direct Lake.
+              </p>
+            </article>
+            <div class="case-study-actions">
+              <a class="btn btn--primary" href="https://github.com/sandralopez/churn-prediction" target="_blank" rel="noopener"
+                >View GitHub Repo</a
+              >
+              <a class="btn btn--ghost" href="index.html#projects">Back to portfolio</a>
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

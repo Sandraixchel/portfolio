@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Retail Feedback Dashboard Case Study · Sandra López</title>
+    <meta
+      name="description"
+      content="Deep dive into Sandra López's Retail Feedback Sentiment project featuring a full-size Power BI dashboard and expanded project notes."
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="case-study-layout">
+      <header class="site-header case-study-header" data-section="case-study">
+        <div class="wrap">
+          <div class="brand">
+            <a class="brand__link" href="index.html#home">Sandra López</a>
+          </div>
+          <input
+            type="checkbox"
+            id="nav-toggle-retail"
+            class="nav-toggle-checkbox"
+            aria-controls="site-nav-retail"
+          />
+          <label class="nav-toggle-label" for="nav-toggle-retail">
+            <span class="nav-toggle-label__text">Menu</span>
+            <svg aria-hidden="true" focusable="false" width="24" height="24" viewBox="0 0 24 24">
+              <path
+                d="M4 6h16M4 12h16M4 18h16"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-width="1.8"
+              />
+            </svg>
+          </label>
+          <nav id="site-nav-retail" class="site-nav" aria-label="Main navigation">
+            <ul class="site-nav__list">
+              <li><a href="index.html#home">Home</a></li>
+              <li><a href="index.html#projects">Projects</a></li>
+              <li><a href="index.html#contact">Contact</a></li>
+              <li><a href="index.html#cv">Download CV</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main class="case-study-main">
+        <div class="wrap">
+          <section class="case-study-hero" aria-labelledby="case-study-title">
+            <p class="eyebrow">Featured case study</p>
+            <h1 id="case-study-title">Retail Feedback Sentiment and Clustering</h1>
+            <p>
+              A multilingual customer-voice analysis across 42,000+ OLIST e-commerce reviews. I combined Python-based
+              text processing, clustering, and an executive-level Power BI dashboard to show why delivery surfaced as
+              the number one driver of customer churn.
+            </p>
+            <ul class="case-study-hero__tags" aria-label="Tools highlighted">
+              <li>Power BI</li>
+              <li>Python</li>
+              <li>SQL</li>
+              <li>Azure Translate</li>
+            </ul>
+            <div class="case-study-meta">
+              <span><strong>Timeline:</strong> 3 weeks · Sep 2025</span>
+              <span><strong>Dataset:</strong> 42k e-commerce reviews · 9GB raw size</span>
+            </div>
+          </section>
+          <section class="case-study-dashboard" aria-labelledby="dashboard-heading">
+            <div class="section__header">
+              <h2 id="dashboard-heading">Explore the live dashboard</h2>
+              <p>
+                Use the filters on the left to focus on a segment, shipping window, or translated keyword cluster. Best
+                viewed in full-screen mode.
+              </p>
+            </div>
+            <iframe
+              class="case-study-dashboard__frame"
+              title="Retail Feedback Power BI dashboard"
+              src="https://app.powerbi.com/view?r=eyJrIjoiMDJiOGRjYWMtNTlmYS00YmFhLWEyYzQtYTExZDhmNmY5NTRlIiwidCI6ImE2MWY4YTRmLTk0ODEtNDVjYy1hZTgwLWEyOWQ3MGY1MDAzYyIsImMiOjh9"
+              allowfullscreen
+            ></iframe>
+          </section>
+          <section class="case-study-content">
+            <article>
+              <h3>Approach</h3>
+              <p>
+                I ingested the raw OLIST table exports into SQL Server, standardized product hierarchies, and
+                tokenized/translated Portuguese comments to English via Azure Cognitive Services. After cleaning, I
+                pushed the enriched table set into Power BI with custom M queries to refresh automatically.
+              </p>
+            </article>
+            <article>
+              <h3>Highlights</h3>
+              <ul>
+                <li>Delivery complaints represented 61% of all negative sentiment regardless of region.</li>
+                <li>Feature engineering exposed three hidden clusters: shipping-status anxiety, damaged packaging, and proactive gratitude.</li>
+                <li>Recommendations prioritized SLA transparency and packaging redesign, saving the ops team 4+ hours weekly.</li>
+              </ul>
+            </article>
+            <article>
+              <h3>What I would improve next</h3>
+              <p>
+                Add automated labeling using a lightweight topic model so each negative cluster can be piped directly
+                into Zendesk as a proactive ticket tag, further reducing manual triage.
+              </p>
+            </article>
+            <div class="case-study-actions">
+              <a class="btn btn--primary" href="https://github.com/sandralopez/retail-dashboard" target="_blank" rel="noopener"
+                >View GitHub Repo</a
+              >
+              <a class="btn btn--ghost" href="index.html#projects">Back to portfolio</a>
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

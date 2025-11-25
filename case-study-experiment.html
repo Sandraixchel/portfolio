@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Experiment Ops Toolkit Case Study · Sandra López</title>
+    <meta
+      name="description"
+      content="Expanded write-up for Sandra López's Experiment Ops Toolkit featuring centralized dashboards and qualitative insight tracking."
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="case-study-layout">
+      <header class="site-header case-study-header" data-section="case-study">
+        <div class="wrap">
+          <div class="brand">
+            <a class="brand__link" href="index.html#home">Sandra López</a>
+          </div>
+          <input
+            type="checkbox"
+            id="nav-toggle-experiment"
+            class="nav-toggle-checkbox"
+            aria-controls="site-nav-experiment"
+          />
+          <label class="nav-toggle-label" for="nav-toggle-experiment">
+            <span class="nav-toggle-label__text">Menu</span>
+            <svg aria-hidden="true" focusable="false" width="24" height="24" viewBox="0 0 24 24">
+              <path
+                d="M4 6h16M4 12h16M4 18h16"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-width="1.8"
+              />
+            </svg>
+          </label>
+          <nav id="site-nav-experiment" class="site-nav" aria-label="Main navigation">
+            <ul class="site-nav__list">
+              <li><a href="index.html#home">Home</a></li>
+              <li><a href="index.html#projects">Projects</a></li>
+              <li><a href="index.html#contact">Contact</a></li>
+              <li><a href="index.html#cv">Download CV</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main class="case-study-main">
+        <div class="wrap">
+          <section class="case-study-hero" aria-labelledby="case-study-title">
+            <p class="eyebrow">Featured case study</p>
+            <h1 id="case-study-title">Experiment Ops Toolkit</h1>
+            <p>
+              I built a lightweight experimentation hub that consolidates A/B test metrics, qualitative notes, and PM
+              checklists inside a single Power BI experience plus automation scripts.
+            </p>
+            <ul class="case-study-hero__tags" aria-label="Tools highlighted">
+              <li>Power BI</li>
+              <li>SQL</li>
+              <li>Power Automate</li>
+              <li>A/B Testing</li>
+            </ul>
+            <div class="case-study-meta">
+              <span><strong>Timeline:</strong> Continuous · 2024-2025</span>
+              <span><strong>Scope:</strong> 37 experiments · 5 product squads</span>
+            </div>
+          </section>
+          <section class="case-study-dashboard" aria-labelledby="dashboard-heading">
+            <div class="section__header">
+              <h2 id="dashboard-heading">Experiment Control Center</h2>
+              <p>
+                Filter by squad, experiment status, or hypothesis to drill into the uplift, guardrail metrics, and
+                qualitative themes captured from live user sessions.
+              </p>
+            </div>
+            <iframe
+              class="case-study-dashboard__frame"
+              title="Experiment Ops Power BI dashboard"
+              src="https://app.powerbi.com/view?r=eyJrIjoiZGFzaGJvYXJkLWV4cGVyaW1lbnQtb3BzLXRvb2xraXQiLCJ0IjoiYTYxZjhhNGYtOTQ4MS00NWNjLWFlODAtYTI5ZDcwZjUwMDNjIiwiYyI6OH0"
+              allowfullscreen
+            ></iframe>
+          </section>
+          <section class="case-study-content">
+            <article>
+              <h3>System design</h3>
+              <p>
+                Tests log directly into a SQL layer with governance around experiment metadata. Power Automate listens
+                for new entries, syncs Confluence briefs, and posts Slack digests pointing to the BI hub.
+              </p>
+            </article>
+            <article>
+              <h3>Process wins</h3>
+              <ul>
+                <li>Unified backlog eliminated duplicate tests and aligned PMs around the same guardrails.</li>
+                <li>Automated weekly digests summarize KPIs and quotes so execs no longer wait for batch reviews.</li>
+                <li>Centralized qualitative tagging kept PMM and UX teams in sync with data scientists.</li>
+              </ul>
+            </article>
+            <article>
+              <h3>Future roadmap</h3>
+              <p>
+                I plan to bolt on a Bayesian calculator plus a Jira connector so experiment decisions sync automatically
+                with delivery tickets.
+              </p>
+            </article>
+            <div class="case-study-actions">
+              <a class="btn btn--primary" href="https://github.com/sandralopez/experiment-ops" target="_blank" rel="noopener"
+                >View GitHub Repo</a
+              >
+              <a class="btn btn--ghost" href="index.html#projects">Back to portfolio</a>
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
