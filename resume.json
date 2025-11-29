@@ -1,47 +1,58 @@
 {
   "name": "Sandra López",
-  "title": "Junior Data Analyst",
+  "title": "Data Analyst",
   "location": "Dublin, Ireland",
   "contact": {
-    "email": "hello@sandralopez.dev",
-    "linkedin": "https://www.linkedin.com/in/sandra-lopez/",
-    "github": "https://github.com/sandralopez"
+    "email": "sandra.ixchel23@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/sandra-l%C3%B3pez-17609628a/",
+    "github": "https://github.com/Sandraixchel"
   },
-  "summary": "Junior data analyst transforming complex datasets into clear, actionable insights across SQL, Python, and modern BI stacks.",
+  "summary": "Data analyst transforming complex datasets into clear, actionable insights across SQL, Python, and modern BI stacks.",
   "skills": [
     "SQL",
     "Python",
     "Pandas",
-    "Tableau",
     "Power BI",
-    "A/B Testing"
+    "Data Visualization"
+    
   ],
   "projects": [
     {
-      "name": "Retail Sales Dashboard",
-      "description": "Multi-page Tableau dashboard with automated insights for weekly retail reporting.",
-      "highlights": ["+9% forecast accuracy", "30% faster reporting"],
+      "name": "Feedback Sentiment Analysis and Clustering",
+      "description": "Analyzed 42,000+ OLIST customer reviews with Python + Power BI to surface satisfaction drivers and automate insights.",
+      "highlights": [
+        "Translated 42k+ Portuguese reviews for unified analysis",
+        "Identified delivery as the top pain point (60%+ of negative feedback)",
+        "Built clustering pipeline to summarize unstructured feedback"
+      ],
       "links": {
-        "github": "https://github.com/sandralopez/retail-dashboard",
-        "caseStudy": "#"
+        "github": "https://github.com/Sandraixchel/FeedbackSentimentAnalysis-Clustering",
+        "caseStudy": "case-study-Feedback Sentiment and Clustering.html"
       }
     },
     {
-      "name": "Churn Prediction",
-      "description": "Tree-based churn classification with SHAP-driven model storytelling.",
-      "highlights": ["ROC-AUC 0.87", "Explainable feature insights"],
+      "name": "Global Box Office Insights",
+      "description": "Power BI dashboards covering 50+ movies to highlight genre, studio, and regional revenue performance.",
+      "highlights": [
+        "Interactive views for revenue by genre, studio, and era",
+        "Surfaced market factors that drive box-office success"
+      ],
       "links": {
-        "github": "https://github.com/sandralopez/churn-prediction",
-        "caseStudy": "#"
+        "github": "",
+        "caseStudy": "case-study-GlobalBox.html"
       }
     },
     {
-      "name": "Experiment Ops Toolkit",
-      "description": "Analytics toolkit to monitor experiments and consolidate cohort learnings.",
-      "highlights": ["Unified A/B catalog", "Automated weekly insights"],
+      "name": "Interim Project - Adventure Works",
+      "description": "SQL + Python deep dive on Adventure Works 2019 data to connect HR metrics, store traits, and revenue outcomes.",
+      "highlights": [
+        "Explained the link between market size, workforce metrics, and revenue",
+        "Flagged manual labor teams as highest sick-leave drivers",
+        "Showed that store tenure/size have weak correlation with revenue"
+      ],
       "links": {
-        "github": "https://github.com/sandralopez/experiment-ops",
-        "caseStudy": "#"
+        "github": "https://github.com/Sandraixchel/AdventureWorks-TeamProject",
+        "caseStudy": "case-study-AdventureWorks.html"
       }
     }
   ]

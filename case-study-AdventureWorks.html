@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Adventure Works Case Study · Sandra López</title>
+    <meta
+      name="description"
+      content="Expanded write-up for Sandra López's Adventures Works data analysis project"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="case-study-layout">
+      <header class="site-header case-study-header" data-section="case-study">
+        <div class="wrap">
+          <div class="brand">
+            <a class="brand__link" href="index.html#home">Sandra López</a>
+          </div>
+          <input
+            type="checkbox"
+            id="nav-toggle-experiment"
+            class="nav-toggle-checkbox"
+            aria-controls="site-nav-experiment"
+          />
+          <label class="nav-toggle-label" for="nav-toggle-experiment">
+            <span class="nav-toggle-label__text">Menu</span>
+            <svg aria-hidden="true" focusable="false" width="24" height="24" viewBox="0 0 24 24">
+              <path
+                d="M4 6h16M4 12h16M4 18h16"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-width="1.8"
+              />
+            </svg>
+          </label>
+          <nav id="site-nav-experiment" class="site-nav" aria-label="Main navigation">
+            <ul class="site-nav__list">
+              <li><a href="index.html#home">Home</a></li>
+              <li><a href="index.html#projects">Projects</a></li>
+              <li><a href="index.html#contact">Contact</a></li>
+              <li><a href="index.html#cv">Download CV</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main class="case-study-main">
+        <div class="wrap">
+          <section class="case-study-hero" aria-labelledby="case-study-title">
+            <p class="eyebrow">Featured case study</p>
+            <h1 id="case-study-title">Adventure Works</h1>
+            <p>
+              This group project analyzed the Adventure Works 2019 dataset to identify key drivers of business 
+              performance across sales, human resources, and store operations. Using SQL for data extraction and Python 
+              (Pandas, Matplotlib, NumPy) for exploratory data analysis and visualization, the team investigated relationships 
+              between HR metrics, store characteristics, and revenue generation across multiple geographic markets.
+            </p>
+            <ul class="case-study-hero__tags" aria-label="Tools highlighted">
+              <li>Python</li>
+              <li>SQL</li>
+              <li>Matplotlib</li>
+              <li>NumPy</li>
+              <li>Pandas</li>
+          
+            </ul>
+            <div class="case-study-meta">
+              <span><strong>Timeline:</strong> October · 2025</span>
+              
+            </div>
+          </section>
+          <section class="case-study-dashboard" aria-labelledby="dashboard-heading">
+            <div class="section__header">
+              <h2 id="dashboard-heading">Power Point Presentation</h2>
+              <p>
+                Delivered to our cohort and mentor, showing a clear narrative flow connecting data insights to business implications.
+              </p>
+            </div>
+            <iframe src="https://generationye-my.sharepoint.com/personal/sandraixchell_genstudents_org/_layouts/15/Doc.aspx?sourcedoc={cf6fde84-75e4-4596-8fc7-95e0d2259eb0}&amp;action=embedview&amp;wdAr=1.7777777777777777" width="476px" height="288px" frameborder="0">
+              This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
+          </section>
+          <section class="case-study-content">
+            <article>
+              <h2>Key Highlights</h2>
+            </article>
+            <article>
+              
+              <ul>
+                <li>USA dominates in absolute revenue ($25M+), but Canada leads in sales per 
+                  inhabitant demonstrating strong market penetration and per-capita consumer engagement</li>
+                <li>Sales representatives take significantly less sick leave than office-based workers, 
+                  indicating better work-life balance and flexibility in field-based roles</li>
+                  <li>Departments with manual labour tend to take more sick leave revealing potential 
+                    burnout or ergonomic issues in physically demanding roles</li>
+                    <li>Larger stores correlate with more employees (as expected), but store size itself is NOT a
+                       key revenue driver, challenging conventional retail assumptions</li>
+                       <li>Scatter plot analysis reveals weak correlation between employee 
+                        numbers and revenue, indicating that strategic staffing and 
+                        location matter more than store size for profitability</li>
+
+              </ul>
+            </article>
+            <article>
+
+            </article>
+            <article>
+              <h2>Methodology</h2>
+            </article>
+            <article>  
+              <h3>Data Extraction & Preparation</h3>
+              <ul>
+                <li>Used SQL queries to extract relevant tables from Adventure Works 2019 (sales, employees, stores)</li>
+                <li>Joined multiple data sources to create analysis-ready datasets with HR, operational, and financial metrics</li>
+              </ul>
+            </article>
+            <article>
+              <h3>Exploratory Data Analysis</h3>
+              <ul>
+                <li>Employed pandas for data cleaning, filtering, and aggregation across multiple dimensions</li>
+                <li>Calculated correlation matrices and descriptive statistics to identify relationships between variables</li>
+                
+              </ul>
+            </article>
+            <article>
+              <h3>Visualization</h3>
+              <ul>
+                <li>Created matplotlib visualizations (scatter plots, bar charts, line charts) to illustrate key findings</li>
+                <li>
+Presented our findings to peers and mentor, effectively communicating the 
+business implications of our data analysis through a structured narrative and meaningful visualizations</li>
+                
+              </ul>
+            </article>
+            
+            <div class="case-study-actions">
+              <a class="btn btn--primary" href="https://github.com/Sandraixchel/AdventureWorks-TeamProject" target="_blank" rel="noopener"
+                >View GitHub Repo</a
+              >
+              <a class="btn btn--ghost" href="index.html#projects">Back to portfolio</a>
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

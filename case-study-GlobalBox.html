@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Experiment Ops Toolkit Case Study · Sandra López</title>
+    <title>Global Box Office Insights · Sandra López</title>
     <meta
       name="description"
-      content="Expanded write-up for Sandra López's Experiment Ops Toolkit featuring centralized dashboards and qualitative insight tracking."
+      content="Walk through Sandra López's Global Box Office Insights backed by Power BI storytelling and data modeling."
     />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
@@ -19,11 +19,11 @@
           </div>
           <input
             type="checkbox"
-            id="nav-toggle-experiment"
+            id="nav-toggle-churn"
             class="nav-toggle-checkbox"
-            aria-controls="site-nav-experiment"
+            aria-controls="site-nav-churn"
           />
-          <label class="nav-toggle-label" for="nav-toggle-experiment">
+          <label class="nav-toggle-label" for="nav-toggle-churn">
             <span class="nav-toggle-label__text">Menu</span>
             <svg aria-hidden="true" focusable="false" width="24" height="24" viewBox="0 0 24 24">
               <path
@@ -35,7 +35,7 @@
               />
             </svg>
           </label>
-          <nav id="site-nav-experiment" class="site-nav" aria-label="Main navigation">
+          <nav id="site-nav-churn" class="site-nav" aria-label="Main navigation">
             <ul class="site-nav__list">
               <li><a href="index.html#home">Home</a></li>
               <li><a href="index.html#projects">Projects</a></li>
@@ -49,64 +49,58 @@
         <div class="wrap">
           <section class="case-study-hero" aria-labelledby="case-study-title">
             <p class="eyebrow">Featured case study</p>
-            <h1 id="case-study-title">Experiment Ops Toolkit</h1>
+            <h1 id="case-study-title">Global Box Office Insights</h1>
             <p>
-              I built a lightweight experimentation hub that consolidates A/B test metrics, qualitative notes, and PM
-              checklists inside a single Power BI experience plus automation scripts.
+              Analyzed box office performance across 50+ films spanning 1977–2022 and major studios (Disney, Universal, Warner Bros.)
+               using Power BI. Created interactive visualizations revealing trends in revenue generation, genre performance, studio dominance, 
+               and international market dynamics.
             </p>
             <ul class="case-study-hero__tags" aria-label="Tools highlighted">
+              
               <li>Power BI</li>
-              <li>SQL</li>
-              <li>Power Automate</li>
-              <li>A/B Testing</li>
             </ul>
             <div class="case-study-meta">
-              <span><strong>Timeline:</strong> Continuous · 2024-2025</span>
-              <span><strong>Scope:</strong> 37 experiments · 5 product squads</span>
+            
             </div>
           </section>
           <section class="case-study-dashboard" aria-labelledby="dashboard-heading">
             <div class="section__header">
-              <h2 id="dashboard-heading">Experiment Control Center</h2>
+              <h2 id="dashboard-heading">Explore the live dashboard</h2>
               <p>
-                Filter by squad, experiment status, or hypothesis to drill into the uplift, guardrail metrics, and
-                qualitative themes captured from live user sessions.
+                Filter by studio, genre, and release decade to uncover box office 
+                performance patterns and revenue drivers. Best viewed in full-screen.
               </p>
             </div>
             <iframe
               class="case-study-dashboard__frame"
-              title="Experiment Ops Power BI dashboard"
-              src="https://app.powerbi.com/view?r=eyJrIjoiZGFzaGJvYXJkLWV4cGVyaW1lbnQtb3BzLXRvb2xraXQiLCJ0IjoiYTYxZjhhNGYtOTQ4MS00NWNjLWFlODAtYTI5ZDcwZjUwMDNjIiwiYyI6OH0"
+              title="Global Box Office Insights dashboard"
+              src="https://app.powerbi.com/view?r=eyJrIjoiN2IwY2UwZTctYzgwNS00MDhmLWEzYjEtYjViYjk5NTE1NGEyIiwidCI6ImE2MWY4YTRmLTk0ODEtNDVjYy1hZTgwLWEyOWQ3MGY1MDAzYyIsImMiOjh9"
               allowfullscreen
             ></iframe>
           </section>
           <section class="case-study-content">
             <article>
-              <h3>System design</h3>
+              <h3>Overview</h3>
               <p>
-                Tests log directly into a SQL layer with governance around experiment metadata. Power Automate listens
-                for new entries, syncs Confluence briefs, and posts Slack digests pointing to the BI hub.
+                This Power BI dashboard provides a comprehensive analysis of 
+                movie box office performance, examining worldwide revenues, domestic performance, 
+                and international appeal across multiple film genres and major studios. The dataset encompasses over 
+                50 theatrical releases from 1977 to 2022, offering insights into what drives commercial success in Hollywood.
               </p>
             </article>
             <article>
-              <h3>Process wins</h3>
+              <h3>Highlights</h3>
               <ul>
-                <li>Unified backlog eliminated duplicate tests and aligned PMs around the same guardrails.</li>
-                <li>Automated weekly digests summarize KPIs and quotes so execs no longer wait for batch reviews.</li>
-                <li>Centralized qualitative tagging kept PMM and UX teams in sync with data scientists.</li>
+                <li>Disney dominates the dataset, with films consistently generating $1B+ in worldwide revenue</li>
+                <li>Action and Sci-Fi genres command the highest worldwide revenues, with Star Wars and Marvel franchises leading</li>
+                <li>Animation shows consistent performance with lower production risk and strong profitability</li>
+                <li>International markets typically represent 60-70% of total revenue for major releases</li>
+                <li>Disney's stranglehold on the market is evident, particularly post-2009</li>
               </ul>
             </article>
-            <article>
-              <h3>Future roadmap</h3>
-              <p>
-                I plan to bolt on a Bayesian calculator plus a Jira connector so experiment decisions sync automatically
-                with delivery tickets.
-              </p>
-            </article>
+           
             <div class="case-study-actions">
-              <a class="btn btn--primary" href="https://github.com/sandralopez/experiment-ops" target="_blank" rel="noopener"
-                >View GitHub Repo</a
-              >
+              
               <a class="btn btn--ghost" href="index.html#projects">Back to portfolio</a>
             </div>
           </section>
